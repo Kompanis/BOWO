@@ -1,0 +1,48 @@
+<!DOCTYPE html>             <!-- Страница, в которой открывается одна книга из Каталога, очень сырая -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleFrom.css">
+    <title>Book Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="book-details">
+            <div class="catalog_item" data-id="1">
+                <img src="books/24.jpg" alt="Описание 1">
+            </div>
+            <div class="book-info">
+                <h1>Бог создал целые числа</h1>
+                <p>Стивен Хокинг</p>
+                <p>Год написания: 1988</p>
+                <button class="read-online-btn" onclick="window.open('./book1.pdf', '_blank')">Читать онлайн</button>
+
+                <p class="description">Математика и логика - прочное основание естественных наук, особенно тех, что оперируют сложными прогностическими моделями. Стивен Хокинг, при помощи уравнений описавший немало гипотетических вселенных, исследует важнейшие математические труды за последние 25 веков, в том числе работы Исаака Ньютона, Николая Лобачевского и Эвариста Галуа. <br>Оригинальные, снабженные комментариями тексты позволяют проследить прогресс математической мысли, проложивший путь для нынешнего века технологий. Каждая глава начинается с биографического очерка ученого, написанного Стивеном Хокингом: он раскрывает ключевую идею автора и значение его труда.
+                    <br>Работы "О формально неразрешимых предложениях "Оснований математики"" Курта Гёделя и "О вычислимых числах и их применении к проблеме разрешимости" Алана Тьюринга публикуются на русском языке впервые.
+                    </p>
+            </div>
+        </div>
+        <div class="review-section">
+            <h2>Отзывы:</h2>
+            <div class="review">
+                <p class="author">Иван Иванов</p>
+                <p class="comment">Отличная книга! Очень понравилась, рекомендую всем.</p>
+            </div>
+            <!-- Добавьте форму для оставления отзыва -->
+            <form class="review-form">
+                <h3>Оставьте свой отзыв:</h3>
+                <label for="author">Ваше имя:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="comment">Отзыв:</label>
+                <textarea id="comment" name="comment" required></textarea>
+
+                <button type="submit">Оставить отзыв</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

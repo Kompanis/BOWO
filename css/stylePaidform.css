@@ -1,0 +1,155 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;  /*значения по умолчанию для всей страницы*/
+    outline: none; border: none;
+    text-decoration: none; /* Убирает подчеркивание у всех состояний ссылок */
+}
+
+/*Deleted .container*/
+
+.header_con{
+    background-color: #A0522D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;                          /*settings navbar*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    width: 115px;
+    height: auto;                          /*Logo in navbar*/
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;                   /*отступы между кнопками в navbar'e, Вход и Регистрация не входит сюда*/
+    gap: 60px;
+    margin-left: 8%;
+}
+
+.hed_div2{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;        /*Вход, Регистрация и иконка профиля */
+    align-items: center;
+    margin-left: 8%;             
+}
+
+.icon_profile{
+    width: 35px;                    /* иконка профиля*/
+    height: 35px;
+    filter: invert(100%);
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+}
+
+.a_link_home{
+    color: #ffffff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;                   /*текст + область в кнопках navbar'a*/
+    border-radius: 2px;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+/*Deleted .a_link*/
+
+.icon{
+    width: 18px;
+    height: 18px;
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+}
+
+.hed_div{
+    gap: 5px;
+    justify-content: center;        /* походу это область нажатия кнопки в navbar'e, нужно сделать её независимой от текста*/
+    align-items: center;
+}
+
+body {
+    background-color: #fafafa;   /* цвет заднего фона*/
+}/* Стили для формы */
+
+
+form {
+    max-width: 500px;
+    margin: 5% auto 0;
+    padding: 30px;
+    border: 3px solid #266cd4;
+    border-radius: 20px; /* Добавляем закругление краев */
+    background-color: #f9f9f9; /* Добавляем фоновый цвет */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Увеличиваем отступ снизу */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input[type = "expiry"]{
+    width: 100%;
+    padding: 12px; /* Увеличиваем внутренний отступ */
+    margin-bottom: 20px; /* Увеличиваем отступ между элементами */
+    border: none; /* Удаляем границу */
+    border-radius: 10px; /* Добавляем закругление краев */
+    box-sizing: border-box;
+    font-size: 18px; /* Увеличиваем размер шрифта */
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.payment-methods {
+    margin-bottom: 20px;
+}
+
+
+.payment-methods label {
+    display: inline-block;
+    margin-right: 5px;
+}
+/* Стили для .main */
+
+.main {
+    position:inherit;
+}
+
+.main::before {
+    content: '';
+    background-image: url(../images/bgr.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4; /* Прозрачность заднего фона*/ 
+    background-size: cover; /* Масштабирование изображения, чтобы оно полностью покрывало фон */
+    background-repeat: no-repeat; /* Отключение повторения изображения*/ 
+    background-position: center center; /* Позиционирование изображения по центру */
+   
+}
+

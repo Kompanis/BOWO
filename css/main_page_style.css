@@ -1,0 +1,482 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;  /*значения по умолчанию для всей страницы*/
+    outline: none; border: none;
+    text-decoration: none; /* Убирает подчеркивание у всех состояний ссылок */
+}
+
+/*Deleted .container*/
+
+.header_con{
+    background-color: #A0522D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;                          /*settings navbar*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    width: 115px;
+    height: auto;                          /*Logo in navbar*/
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;                   /*отступы между кнопками в navbar'e, Вход и Регистрация не входит сюда*/
+    gap: 60px;
+    margin-left: 8%;
+}
+
+.hed_div2{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;        /*Вход, Регистрация и иконка профиля */
+    align-items: center;
+    margin-left: 8%;             
+}
+
+.icon_profile{
+    width: 35px;                    /* иконка профиля*/
+    height: 35px;
+    filter: invert(100%);
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+}
+
+.a_link_home{
+    color: #ffffff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;                   /*текст + область в кнопках navbar'a*/
+    border-radius: 2px;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+/*Deleted .a_link*/
+
+.icon{
+    width: 18px;
+    height: 18px;
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+}
+
+.hed_div{
+    gap: 5px;
+    justify-content: center;        /* походу это область нажатия кнопки в navbar'e, нужно сделать её независимой от текста*/
+    align-items: center;
+}
+
+body {
+    background-color: #fafafa;   /* цвет заднего фона*/
+}
+/*end */
+
+.main {
+    position: relative;
+    margin-top: 40px;              /*контейнер от начала и немного ТОП КНИГ  */
+    height: 850px;
+}
+
+.main::before {
+    content: '';
+    background-image: url(../images/bgr.jpg);
+    position: absolute;
+    top: 0;                        /*скрашивает задний фон за контейнером main*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Помещаем фоновое изображение под контентом */
+    opacity: 0.1; /* Здесь 0.7 - значение прозрачности (от 0 до 1) для фонового изображения */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+.block_book {
+    margin-top: 100px;
+    position: absolute;
+    display: flex;                  /*блок с Игрой Престолов (в нем всё)*/
+    justify-content: center;
+    align-items: center
+
+}
+
+.block_book img {
+    width: 300px;
+    height: auto;                   /*Картинка Игра Престолов*/
+    position: relative;
+}
+
+
+.box_book {
+    width: 300px;
+    height: 425px;
+    background-color: #A86504;    /*наше любимое пятно*/
+    position: relative;
+    left: 300px;
+    filter: blur(50px);
+}
+
+.text_book {
+    color: black;
+    margin-left: 100px;              /*...just text*/
+    width: 40%;
+    position: relative;
+}
+
+.name_book {
+    font-size: 30px;
+    margin-bottom: 30px;             /*...just name*/
+    font-weight: bold;
+}
+
+/*Deleted name_book b*/
+
+.btn_book{
+    margin-bottom: 30px;            /*отступ под кнопкой*/
+}
+
+.read_book1 {
+    background-color: #A0522D;    /*кнопка Читать*/
+    border-radius: 15px;
+    padding: 14px 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.read_book1:hover {
+    background-color: #D63F00;    /* Цвет фона кнопки при наведении */
+}
+
+.read_book2 {
+    background-color: #A0522D;
+    border-radius: 15px;            /*Кнопка Закладка (not planting)*/
+    padding: 15px 40px;
+    color: white;
+    transition: background-color 0.1s;
+    margin-left: 20px;
+}
+
+.read_book2:hover {
+    background-color: #D63F00;     /* the same... */
+}
+
+.read_book2 img {
+    height: 20px;                    /*icon of Zacladka*/
+    width: 20px;
+    filter: invert(100%);
+}
+
+.info_book p {
+    margin-bottom: 10px;            /*Жанр*/
+}
+
+.info_book {
+    font-weight: 550;               /*Весь текст в О книге*/
+}
+
+.info_book b {
+    color: #000102;              /*Жанр, О книге*/
+}
+
+
+
+
+/*ТОП КНИГ*/
+
+
+
+.top_knig_carta {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1D490;
+    border-radius: 15px;            /*Блок ТОП книг*/
+    padding-bottom: 25px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+    
+}
+
+
+.top_knig {
+    display: flex;
+    align-items: center;
+    flex-direction: column;         /*Блок ТОП книг тоже*/
+    justify-content: space-between;
+    margin-top: -160px;
+}
+ 
+.name_top {
+    color: black;
+    font-size: 20px;                /*Текст Топ Книг*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.block_knig {
+    display: flex;                  /*сами блоки с книгами внутри желтого блока*/
+    align-items: center;
+}
+
+
+
+.block_knig img {
+    width: 170px; 
+    height: auto;                   /*картинки топ книг*/
+    margin-right: 60px;
+    transition: transform 0.3s; /* добавляем плавное изменение при hover */
+}
+
+
+.block_knig img:hover {
+    transform: scale(1.1); /* увеличиваем картинку при наведении */
+}
+
+
+
+.block_knig p {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);            /*описание*/
+    font-size: 14px;
+}
+
+/*DELETED and block in main_page.html: pop_up, pop_up.active, pop_up_container, pop_up_close, pop_up_body*/
+
+
+/*About Us*/
+.about_us_word {
+    display: flex;
+    justify-content: center;
+    align-items: center;                /*сам текст О НАС:*/
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    color: #2f3945
+}
+
+
+.about_us_text {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;                      /*текст под О НАС:*/
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome-text, .join-text {
+    font-size: 16px;
+    line-height: 1.5;                   /*абзац 1 and 2*/
+    color: #333;
+    margin-bottom: 20px;
+}
+/*Конец блока О НАС*/
+
+
+/*start COLONKI*/
+#glaw {
+    max-width: 880px;
+    margin: auto;
+    display: flex;                      /*under About Us. даже ене спрашивайте почему здесь #, это коллекция или селекция или селектор, забейте просто*/
+    justify-content: space-between;
+    gap: 20px; 
+    margin-bottom: 100px;
+}
+
+.feature-block {
+    width: 200px;
+    padding: 10px;
+    text-align: center;                  /*КОЛОНКИ (4 ШТ)*/
+    border-radius: 4px;                 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    color: #333;                      /*заглавный текст*/
+}
+.feature-block p {
+    font-size: 16px;
+    line-height: 1.5;                   /*параграфы в колонках */
+    color: #555;
+    margin: 0;
+    vertical-align: text-bottom;
+}
+
+.book-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;         /*иконки в колонках*/
+    background-image: url('https://cdn-icons-png.flaticon.com/512/4220/4220418.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+/*END COLONKI*/
+
+
+
+
+/*START FOOTER*/
+/*DELETED .p*/
+
+.footer_name p {
+    font-weight: 400;
+    font-size: 15px;                /*"ОТКРОЙТЕ ДВЕРИ В ВОЛШЕБНЫЙ МИР ОНЛАЙН КНИГ — ВАШ ПУТЬ К ПРИКЛЮЧЕНИЯМ, ЗНАНИЯМ И БЕСКРАЙНЕМУ ВДОХНОВЕНИЮ!"*/
+    margin-top: 20px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;             /*БЛОК ФУТЕРА*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer_name {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;                /*СЛОГАН*/
+    font-weight: 900;
+    font-size: 35px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer_name_line {
+    background-color: #2f3945;          /*      ^________________________________________^     */
+    width: 350px;
+    height: 2px;
+    margin-top: 15px;
+}
+
+
+
+.footer_button {
+    background-color: #A0522D;
+    padding: 17px 20px;
+    color: white;                       /*присоедениться кнопка под Слоганом*/
+    margin-top: 40px;
+    border-radius: 15px;
+    transition: background-color 0.1s;
+    font-size: 15px;
+    
+}
+
+.footer_button:hover {
+    background-color: #D63F00;          /*цвет при наведении, кнопки*/
+}
+
+.footer_info {
+    background-color: #587d92;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;            /* БЛОК "Мы в соц.сетях" до лого */
+    align-items: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    color: #ffffff;
+}
+
+.footer_soc {
+    padding-top: 35px;
+    color: white;
+    background-color: #587d92;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;         
+    text-align: center; /* Выравнивает текст по центру */
+    margin: 0 auto; /* Центрирует блок по горизонтали */          /*МЫ В СОЦ-СЕТЯХ:*/
+    
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: space-between;     /*расположение иконок соц сетей */
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.footer_icons img {
+    width: 50px; 
+    filter: invert(100%);
+    margin-left: 40px;
+    
+}
+
+.footer_navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;                     /*нижний navbar  */
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.footer_navbar div {                         /*нижний navbar2  */
+    margin-left: 40px; 
+    color: rgb(255, 255, 255);
+}
+.footer_navbar_line {
+    background-color: white;
+    width: 350px;                            /*      ^________________________________________^     */
+    height: 2px;
+    margin-top: 50px;
+}
+
+
+
+
+.footer_cpr {
+    background-color: #2f3945;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;                    /*самый нижний блок с лого и community */
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-top: -50px;
+}
+
+.logoo {
+    width: 300px;
+    margin-bottom: 20px;                    /*logo*/
+}
+
+
+.footer_cpr_txt {
+    font-size: 15px;                        /* "© 2024 BoWo community" */
+    font-weight: 400;
+}
+

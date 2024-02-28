@@ -1,0 +1,138 @@
+.header_con{
+    background-color: #A0522D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;                          /*settings navbar*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    width: 115px;
+    height: auto;                          /*Logo in navbar*/
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;                   /*отступы между кнопками в navbar'e, Вход и Регистрация не входит сюда*/
+    gap: 60px;
+    margin-left: 8%;
+}
+
+.hed_div2{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;        /*Вход, Регистрация и иконка профиля */
+    align-items: center;
+    margin-left: 8%;             
+}
+
+.icon_profile{
+    width: 35px;                    /* иконка профиля*/
+    height: 35px;
+    filter: invert(100%);
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+
+}
+
+.a_link_home{
+    color: #ffffff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;                   /*текст + область в кнопках navbar'a*/
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+/*Deleted .a_link*/
+
+.icon{
+    width: 18px;
+    height: 18px;
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+}
+
+.hed_div{
+    gap: 5px;
+    justify-content: center;        /* походу это область нажатия кнопки в navbar'e, нужно сделать её независимой от текста*/
+    align-items: center;
+}
+body {
+    background-color: grey;  /* background color*/
+}
+
+/* CATALOG */
+
+/* ... (ваш текущий CSS код) ... */
+
+.catalog {
+    background-color: #f0f0f0;
+    padding: 2rem 0; /* Регулирует вертикальные отступы */
+    margin-top: 4rem; /* карточки не под navbarom*/
+}
+
+.catalog h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Отступ после заголовка */
+
+}
+
+.catalog_items {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку при нехватке места */
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.catalog_item {
+    flex: 1 1 calc(20% - 1rem); /* Задает гибкость и базовую ширину элемента, вычитая отступ между элементами */
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Отступ между элементами на новой строке */
+}
+/* Добавленные стили для эффекта увеличения при наведении */
+.catalog_item:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+
+.catalog_item img {
+    width: 100%; /* Растягивает изображение на 100% ширины элемента */
+    height: 250px;
+    margin-bottom: 0.5rem; /* Отступ после изображения */
+}
+
+
+
+
+
+/* Добавим стили для всплывающего окна */
+.details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+

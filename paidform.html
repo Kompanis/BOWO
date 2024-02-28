@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подписка</title>
+    
+    <link rel="stylesheet" href="css/stylePaidform.css">
+    <script src="paidform.js"></script>
+
+</head>
+<!--------header. navbar--------->
+<header class="header">
+    <div class="container">
+        <div class="header_con">
+            <a href="main_page.html"><img src="images/bowogg.png" class="logo"></a>
+            <nav class="navbar">
+                <div class="hed_div">
+                    <img src="images/shop_icon.png" class="icon">
+                    <a href="shop.html" class="a_link_home">Магазин</a>
+                </div>
+                <div class="hed_div">
+                    <img src="images/menu.svg" class="icon">
+                    <a href="catalogWth/catalog.html" class="a_link_home">Каталог</a>
+                </div>
+
+                <div class="hed_div">
+                    <img src="images/loupe.svg" class="icon">
+                    <a href="search.html" class="a_link_home">Поиск</a>
+                </div>
+
+                <div class="hed_div">
+                    <img src="images/chat.svg" class="icon">
+                    <a href="#home" class="a_link_home">Форум</a>
+                </div>
+
+
+                <div class="hed_div">
+                    <img src="images/feedback_icon.png" class="icon">
+                    <a href="feedback.html" class="a_link_home">Feedback</a>
+                </div>
+                <div class="hed_div">
+                    <img src="images/crown_icon.png" class="icon">
+                    <a href="paidform.html" class="a_link_home">Подписка</a>
+                </div>
+            </nav>
+
+            <div class="hed_div2">
+                <a href="form_sign_in and sign_up.html" class="a_link_home">Вход</a>
+                <div class="sign_up">
+                    <a href="form_sign_in and sign_up.html" class="a_link_home">Регистрация</a>
+                </div>
+                <a href="BoWo2/bowo.html"><img src="images/profile_icon2.png" class="icon_profile"></a>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+
+<div class="main">
+    <form action="/subscribe" method="post">
+        <h2>Оплата банковской картой</h2>
+        <p>Введите данные вашей банковской карты: </p>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" maxlength="20" placeholder="Василиса" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" maxlength="35" placeholder="vasilisa007@gmail.com" required>
+
+        <label for="card">Номер карты:</label>
+        <input type="text" id="card" name="card" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+        <label for="month">Месяц:</label>
+        <input type="text" id="month" name="month" maxlength="2" placeholder="MM" required>
+        <label for="year">Год:</label>
+        <input type="text" id="year" name="year" maxlength="2" placeholder="YY" required>
+
+
+        <div class="payment-methods">
+
+            <label for="visa">Visa</label>
+            <input type="radio" id="visa" name="payment" value="visa" required>
+
+            <label for="mbank">Mbank</label>
+            <input type="radio" id="mbank" name="payment" value="mbank" required>
+
+            <label for="optima">Optima</label>
+            <input type="radio" id="optima" name="payment" value="optima" required>
+        </div>
+
+        <input type="submit" value="Подписаться">
+    </form>
+</div>
+
+</body>
+</html>
+

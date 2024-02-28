@@ -1,0 +1,176 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;  /*значения по умолчанию для всей страницы*/
+    outline: none; border: none;
+    text-decoration: none; /* Убирает подчеркивание у всех состояний ссылок */
+}
+
+/*Deleted .container*/
+
+.header_con{
+    background-color: #A0522D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;                          /*settings navbar*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    width: 115px;
+    height: auto;                          /*Logo in navbar*/
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;                   /*отступы между кнопками в navbar'e, Вход и Регистрация не входит сюда*/
+    gap: 60px;
+    margin-left: 8%;
+}
+
+.hed_div2{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;        /*Вход, Регистрация и иконка профиля */
+    align-items: center;
+    margin-left: 8%;             
+}
+
+.icon_profile{
+    width: 35px;                    /* иконка профиля*/
+    height: 35px;
+    filter: invert(100%);
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+}
+
+.a_link_home{
+    color: #ffffff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;                   /*текст + область в кнопках navbar'a*/
+    border-radius: 2px;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+/*Deleted .a_link*/
+
+.icon{
+    width: 18px;
+    height: 18px;
+    position: relative;             /* иконки возле кнопок в navbnar*/
+    top: 3px;
+}
+
+.hed_div{
+    gap: 5px;
+    justify-content: center;        /* походу это область нажатия кнопки в navbar'e, нужно сделать её независимой от текста*/
+    align-items: center;
+}
+
+body {
+    background-color: #ebe9e9;   /* цвет заднего фона*/
+}
+/*end */
+
+
+/*START FOOTER*/
+/*DELETED .p*/
+
+.footer_info {
+    background-color: #587d92;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;            /* БЛОК "Мы в соц.сетях" до лого */
+    align-items: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    color: #ffffff;
+}
+
+.footer_soc {
+    padding-top: 35px;
+    color: white;
+    background-color: #587d92;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;         
+    text-align: center; /* Выравнивает текст по центру */
+    margin: 0 auto; /* Центрирует блок по горизонтали */          /*МЫ В СОЦ-СЕТЯХ:*/
+    
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: space-between;     /*расположение иконок соц сетей */
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.footer_icons img {
+    width: 50px; 
+    filter: invert(100%);
+    margin-left: 40px;
+    
+}
+
+.footer_navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;                     /*нижний navbar  */
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.footer_navbar div {                         /*нижний navbar2  */
+    margin-left: 40px; 
+    color: rgb(255, 255, 255);
+}
+.footer_navbar_line {
+    background-color: white;
+    width: 350px;                            /*      ^________________________________________^     */
+    height: 2px;
+    margin-top: 50px;
+}
+
+
+
+
+.footer_cpr {
+    background-color: #2f3945;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;                    /*самый нижний блок с лого и community */
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #fff;
+    margin-top: -50px;
+}
+
+.logoo {
+    width: 300px;
+    margin-bottom: 20px;                    /*logo*/
+}
+
+
+.footer_cpr_txt {
+    font-size: 15px;                        /* "© 2024 BoWo community" */
+    font-weight: 400;
+}
+
